@@ -4,8 +4,10 @@ primes = []
 not_primes = []
 
 for number in numbers:
+    if number == 1:
+        continue
     is_prime=True
-    if number<=1:
+    if number<1:
         is_prime=False
     else:
         for i in range(2,(number//2)+1):
